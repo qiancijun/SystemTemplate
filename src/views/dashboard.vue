@@ -16,6 +16,6 @@ export default {
 
 <style lang="less" scoped>
 .dashboard-container {
-    height: 100%;
+    height: calc(100% - 60px);
 }
 </style>
