@@ -4,6 +4,7 @@ import router from './router'
 import axios from 'axios';
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+// import { Line } from '@antv/g2plot';
 
 Vue.config.productionTip = false
 Vue.prototype.axios = axios;
@@ -18,6 +19,7 @@ Vue.config.productionTip = false
 // }
 
 Vue.use(Element)
+// Vue.use(Line)
 
 new Vue({
   render: h => h(App),

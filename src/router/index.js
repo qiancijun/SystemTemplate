@@ -28,8 +28,17 @@ const routes = [
     path: '/dashboard',
     name: 'dashboard',
     meta: {isAdmin: false},
-    component: () => import('@/views/dashboard.vue')
+    component: () => import('@/views/dashboard.vue'),
     // component: resolve => (require(['@/views/MainPage.vue']), resolve)
+    children: [
+      {
+        path: '/dashboard/humidityBoard',
+        name: 'humidityBoard',
+        meta: {isAdmin: false},
+        component: () => import('@/views/boards/humidityBoard.vue')
+      },
+
+    ]
   },
 ]
 

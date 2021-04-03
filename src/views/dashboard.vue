@@ -1,6 +1,9 @@
 <template>
   <div class="dashboard-container">
       <left-nav/>
+      <div class="router-container">
+        <router-view/>
+      </div>
   </div>
 </template>
 
@@ -16,6 +19,10 @@ export default {
 
 <style lang="less" scoped>
 .dashboard-container {
-    height: 100%;
+    height: calc(100% - 60px);
+    .router-container {
+        width: 90%;
+        float: right;
+    }
 }
 </style>
