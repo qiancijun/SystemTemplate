@@ -20,7 +20,7 @@ export default {
     .title {
         color: white;
         line-height: 60px;
-        margin-left: 20px;
+        margin-left: 10%;
         -webkit-user-select:none;
         -moz-user-select:none;
         -ms-user-select:none;

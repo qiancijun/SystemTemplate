@@ -7,8 +7,15 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    redirect: '/login',
+    redirect: '/home',
     meta: {isAdmin: false},
+  },
+  {
+    path: '/home',
+    name: 'home',
+    meta: {isAdmin: false},
+    component: () => import('@/views/Home.vue')
+    // component: resolve => (require(['@/views/MainPage.vue']), resolve)
   },
   {
     path: '/login',
