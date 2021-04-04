@@ -26,14 +26,14 @@ export default {
     margin: auto;
     .icon-box {
         border: grey solid 3px;
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         border-radius: 100%;
         // text-align: center;
         .icon {
             width: 50px;
             height: 50px;
-            margin: 18px 22px;
+            margin: 25px 30px;
         }
     }
     .title {
@@ -54,5 +54,14 @@ export default {
         letter-spacing: 2px;
         margin-left: 10px;
     }
+}
+
+.icon-box:hover {
+    border: skyblue solid 3px;
+    transition: 0.5s;
+}
+.title:hover {
+    color: aqua;
+    transition: 1s;
 }
 </style>

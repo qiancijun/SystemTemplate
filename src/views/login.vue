@@ -42,6 +42,7 @@ export default {
     methods: {
         login: function() {
             if (this.userName == "admin" && this.password == "admin") {
+                sessionStorage.setItem("Authorization", true);
                 this.$router.replace('/dashboard');
             } else if (this.userName != "admin") {
                 this.$message({

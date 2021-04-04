@@ -21,6 +21,18 @@ Vue.config.productionTip = false
 Vue.use(Element)
 // Vue.use(Line)
 
+router.beforeEach((to, from, next) => {
+  if (to.meta.isAdmin) {
+    if (sessionStorage.getItem("Authorization") === null) {
+      next('/login');
+    } else {
+      next();
+    }
+  } else {
+    next();
+  }
+});
+
 new Vue({
   render: h => h(App),
   router,

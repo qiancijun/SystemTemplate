@@ -20,9 +20,17 @@ export default {
 <style lang="less" scoped>
 .dashboard-container {
     height: calc(100% - 60px);
+    overflow: hidden;
     .router-container {
-        width: 90%;
+        overflow: auto;
+        width: calc(100% - 200px);
         float: right;
+        height: 100%;
+        background-color: rgb(241, 241, 241);
     }
+}
+
+.router-container::-webkit-scrollbar {
+  display: none !important;
 }
 </style>

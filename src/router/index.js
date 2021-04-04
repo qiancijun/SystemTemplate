@@ -27,17 +27,34 @@ const routes = [
   {
     path: '/dashboard',
     name: 'dashboard',
-    meta: {isAdmin: false},
+    meta: {isAdmin: true},
     component: () => import('@/views/dashboard.vue'),
     // component: resolve => (require(['@/views/MainPage.vue']), resolve)
     children: [
       {
         path: '/dashboard/humidityBoard',
         name: 'humidityBoard',
-        meta: {isAdmin: false},
+        meta: {isAdmin: true},
         component: () => import('@/views/boards/humidityBoard.vue')
       },
-
+      {
+        path: '/dashboard/temperatureBoard',
+        name: 'temperatureBoard',
+        meta: {isAdmin: true},
+        component: () => import('@/views/boards/temperatureBoard.vue')
+      },
+      {
+        path: '/dashboard/manageBoard',
+        name: 'manageBoard',
+        meta: {isAdmin: true},
+        component: () => import('@/views/boards/manageBoard.vue')
+      },
+      {
+        path: '/dashboard/vocBoard',
+        name: 'vocBoard',
+        meta: {isAdmin: true},
+        component: () => import('@/views/boards/vocBoard.vue')
+      },
     ]
   },
 ]

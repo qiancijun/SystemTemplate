@@ -1,6 +1,7 @@
 <template>
   <div class="topbar-container">
-      <div class="title">{{ title }}</div>
+      <span class="title">{{ title }}</span>
+      <span class="home" @click="goto('/home')">首页</span>
   </div>
 </template>
 
@@ -8,6 +9,14 @@
 export default {
     props: {
         title: String
+    },
+    methods: {
+        goto: function(path) {
+            this.$router.push(path);
+        },
+        gotoNoHistory: function(path) {
+            this.$router.replace(path);
+        }
     }
 }
 </script>
@@ -17,6 +26,7 @@ export default {
     background: rgb(37, 42, 47);
     width: 100%;
     height: 60px;
+    overflow: hidden;
     .title {
         color: white;
         line-height: 60px;
@@ -25,6 +35,13 @@ export default {
         -moz-user-select:none;
         -ms-user-select:none;
         user-select:none;
+    }
+    .home {
+        float: right;
+        color: white;
+        line-height: 60px;
+        margin-right: 100px;
+        cursor: pointer;
     }
 }
 </style>

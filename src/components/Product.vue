@@ -29,7 +29,7 @@ export default {
 .advantage-module {
     width: 300px;
     border: white solid 1px;
-    margin: 20px;
+    margin: auto;
     .title {
         height: 50px;
         line-height: 50px;
@@ -58,5 +58,9 @@ export default {
             margin: 10px;
         }
     }
+}
+.advantage-module:hover {
+    border: skyblue solid 1px;
+    transition: 0.5s;
 }
 </style>
