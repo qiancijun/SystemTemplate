@@ -53,8 +53,16 @@ export default {
         let _this = this;
         // let cnt = 0; // 计数器
         this.readData = setInterval(() => {
-            const x = new Date().getTime(), // current time
+            let x = new Date().getTime(), // current time
                 y = Math.random() * 100;
+
+            _this.axios.get("/api/temperature")
+            .then(res => {
+              y = parseInt(res.humidity);
+            }).catch(err => {
+              console.error(err);
+              y = 0;
+            });
             let newData;
             newData = _line.options.data.slice(1).concat({ x, y });
             _line.changeData(newData);

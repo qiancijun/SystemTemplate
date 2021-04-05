@@ -14,10 +14,9 @@
               <div class="line"></div>
           </div>
           <div class="advantages">
-              <Advantage advantageTitle="标题" advantageInfo="信息" :src="require('../assets/icon/齿轮.png')"></Advantage>
-              <Advantage advantageTitle="标题" advantageInfo="信息" :src="require('../assets/icon/齿轮.png')"></Advantage>
-              <Advantage advantageTitle="标题" advantageInfo="信息" :src="require('../assets/icon/齿轮.png')"></Advantage>
-              <Advantage advantageTitle="标题" advantageInfo="信息" :src="require('../assets/icon/齿轮.png')"></Advantage>
+              <Advantage advantageTitle="更安全" advantageInfo="设定传感器阈值，负反馈调节，安全可靠" :src="require('../assets/icon/齿轮.png')"></Advantage>
+              <Advantage advantageTitle="更智能" advantageInfo="四大模式自主选择，μC/OS 实时操作系统工作机制的使用,满足各种需求" :src="require('../assets/icon/齿轮.png')"></Advantage>
+              <Advantage advantageTitle="更便捷" advantageInfo="联网功能，无线Wi-FiD的Airkiss技术，可在PC端远程查看检测柜内数据，方便快捷" :src="require('../assets/icon/齿轮.png')"></Advantage>
           </div>
       </div>
 
@@ -28,10 +27,10 @@
               <div class="line"></div>
           </div>
           <div class="product-box">
-              <Product title="标题" info="信息" :src="require('../assets/icon/齿轮.png')"></Product>
-              <Product title="标题" info="信息" :src="require('../assets/icon/齿轮.png')"></Product>
-              <Product title="标题" info="信息" :src="require('../assets/icon/齿轮.png')"></Product>
-              <Product title="标题" info="信息" :src="require('../assets/icon/齿轮.png')"></Product>
+              <Product title="主控芯片" info="STM32F429IGT6" :src="require('../assets/icon/齿轮.png')"></Product>
+              <Product title="电源模块" info="220V-12VAC-DC转换机" :src="require('../assets/icon/齿轮.png')"></Product>
+              <Product title="联网模块" info="ESP07S" :src="require('../assets/icon/齿轮.png')"></Product>
+              <Product title="EMWIN" info="嵌入式平台开发图形软件库" :src="require('../assets/icon/齿轮.png')"></Product>
           </div>
       </div>
 
@@ -59,12 +58,12 @@ export default {
     },
     data() {
         return {
-            titleMsg: "标题",
-            infoMsg: "信息",
+            titleMsg: "智能危化品安全柜",
+            infoMsg: "基于物联网，互联网，移动网于一体的智能设备",
             productsTitle: "我们的产品",
             AdvantageTitle: "我们的优势",
             teamTitle: "我们的团队",
-            teamInfo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, omnis incidunt rem cumque consequatur id qui minima perferendis quasi aspernatur dolorem dolores beatae ex. Expedita voluptate praesentium ducimus maiores eveniet!",
+            teamInfo: "具备产品开发的硬件负责人，可对电子元件选型和运用\n具备数据库设计,接口设计和主码实现的后端设计能力的后端负责人\n具备前后端交互，web开发和前端设计的前端负责人",
         }
     },
     methods: {

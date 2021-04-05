@@ -55,9 +55,9 @@ export default {
                 let x = new Date().getTime(), // current time
                     y = Math.random() * 100; // y = 0;
                 
-                _this.axios.get("/humidity")
+                _this.axios.get("/api/humidity")
                 .then(res => {
-                  y = res.humidity;
+                  y = parseInt(res.humidity);
                 }).catch(err => {
                   console.error(err);
                   y = 0;
