@@ -80,7 +80,9 @@ export default {
 <style lang="less" scoped>
 .home-container {
     // height: 800px;
-    background-color: black;
+    background: url("../assets/bk.png") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     overflow: auto;
     .desc-container {
         // height: 200px;
@@ -111,7 +113,8 @@ export default {
             text-align: center;
             width: 100%;
             font-size: 20px;
-            color: rgb(160, 164, 177);
+            // color: rgb(160, 164, 177);
+            color: goldenrod;
             letter-spacing: 5px;
             font-family:"YouYuan";
         }

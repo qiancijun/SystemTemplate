@@ -71,28 +71,32 @@ export default {
 
 <style lang="less" scoped>
 .login-container {
-    background-color: skyblue;
+    // background-color: skyblue;
     width: 100%;
     height: calc(100% - 60px);
-
+    background: url("../assets/bk2.png") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     .desc-container {
-        width: 40%;
+        width: 30%;
         position: absolute;
         top: 25%;
         left: 5%;
         .desc-title {
             margin-bottom: 30px;
             font-size: 50px;
+            color: #FFFFFF;
         }
         .desc-content {
             line-height: 30px;
             font-size: 20px;
+            color: #FFFFFF;
         }
     }
     
     .login {
         position: absolute;
-        background-color: #FFFFFF;
+        background-color: rgba(255, 255, 255, .7);
         top: 25%;
         left: 62%;
         right: 12%;

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <topbar title="DashBoard"/>
+    <topbar title="农业智能管理系统"/>
     <router-view/>
   </div>
 </template>
