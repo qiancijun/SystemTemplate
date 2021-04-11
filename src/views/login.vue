@@ -13,7 +13,7 @@
     <div class="login">
         <div class="container">
             <div class="title">
-                登&ensp;录
+                农业智能管理系统
             </div>
             <div class="u">
                 <input type="text" class="uname" v-model="userName" placeholder="请输入用户名" autocomplete="off"/>

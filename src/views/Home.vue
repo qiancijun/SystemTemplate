@@ -14,9 +14,9 @@
               <div class="line"></div>
           </div>
           <div class="advantages">
-              <Advantage advantageTitle="更安全" advantageInfo="设定传感器阈值，负反馈调节，安全可靠" :src="require('../assets/icon/齿轮.png')"></Advantage>
-              <Advantage advantageTitle="更智能" advantageInfo="四大模式自主选择，μC/OS 实时操作系统工作机制的使用,满足各种需求" :src="require('../assets/icon/齿轮.png')"></Advantage>
-              <Advantage advantageTitle="更便捷" advantageInfo="联网功能，无线Wi-FiD的Airkiss技术，可在PC端远程查看检测柜内数据，方便快捷" :src="require('../assets/icon/齿轮.png')"></Advantage>
+              <Advantage advantageTitle="更安全" advantageInfo="设定传感器阈值，负反馈调节，安全可靠" :src="require('../assets/icon/security.png')"></Advantage>
+              <Advantage advantageTitle="更智能" advantageInfo="四大模式自主选择，μC/OS 实时操作系统工作机制的使用,满足各种需求" :src="require('../assets/icon/tool.png')"></Advantage>
+              <Advantage advantageTitle="更便捷" advantageInfo="联网功能，无线Wi-FiD的Airkiss技术，可在PC端远程查看检测柜内数据，方便快捷" :src="require('../assets/icon/data.png')"></Advantage>
           </div>
       </div>
 
@@ -28,9 +28,9 @@
           </div>
           <div class="product-box">
               <Product title="主控芯片" info="STM32F429IGT6" :src="require('../assets/icon/齿轮.png')"></Product>
-              <Product title="电源模块" info="220V-12VAC-DC转换机" :src="require('../assets/icon/齿轮.png')"></Product>
-              <Product title="联网模块" info="ESP07S" :src="require('../assets/icon/齿轮.png')"></Product>
-              <Product title="EMWIN" info="嵌入式平台开发图形软件库" :src="require('../assets/icon/齿轮.png')"></Product>
+              <Product title="电源模块" info="220V-12VAC-DC转换机" :src="require('../assets/icon/checkstand.png')"></Product>
+              <Product title="联网模块" info="ESP07S" :src="require('../assets/icon/electronics.png')"></Product>
+              <Product title="EMWIN" info="嵌入式平台开发图形软件库" :src="require('../assets/icon/bussiness-man.png')"></Product>
           </div>
       </div>
 
